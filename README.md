@@ -1,2 +1,2 @@
-# Proyectos-CIbertec
+# Proyectos-Cibertec
 Proyectos de cursos de Cibertec en general
