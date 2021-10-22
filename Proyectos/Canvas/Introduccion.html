@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="canvas" width="150" height="150"></canvas>
+    
+    <script type="application/javascript">
+        var canvas = document.getElementById("canvas");
+        //En canvas el ctx se refier al marcador color,etc
+        var ctx = canvas.getContext("2d");
+        //fillRect se refiere al rectangulo
+        ctx.fillRect(0,0,50,50);//(medida,medida,tamaño.tamaño)
+    </script>
+</body>
+</html>

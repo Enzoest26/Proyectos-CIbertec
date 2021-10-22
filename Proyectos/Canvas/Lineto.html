@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="150" height="150" id="canvas"></canvas>
+
+    <script type="application/javascript">
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d"); //Esto se refiere a un lapiz
+        /*ctx.fillStyle = "rgb(200,0,0)";//el fill significa es relleno
+        ctx.fillRect(10,10,100,100);
+        ctx.fillStyle = "rgba(0,0,200,0.5)"; //rgba es para darle transparencia
+        ctx.fillRect(30,30,100,100); */
+
+        ctx.fillStyle = "rgb(255,57,23)";//rgb colores solidos
+
+        ctx.fillStyle = "rgba(255,62,41,0.2)" ;//rgba colores con transparencias
+        ctx.beginPath();//Es iniciar a dibujar una figura
+        ctx.moveTo(25,25);//punto de origen
+        ctx.lineTo(105,25);//linea en coordenadas
+        ctx.lineTo(25,105);//Otra linea
+        ctx.closePath();//Finalizar el dibujo, lo que vualve al punto origen
+        ctx.fill();
+
+
+        //Inicia otra figura
+        ctx.strokeStyle = ("blue");
+        ctx.beginPath();
+        ctx.moveTo(125,125);
+        ctx.lineTo(125,45);
+        ctx.lineTo(45,125);
+        ctx.closePath();
+        ctx.stroke();// Relleno solo el borde
+    </script>
+</body>
+</html>
